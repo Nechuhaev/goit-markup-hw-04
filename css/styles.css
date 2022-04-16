@@ -142,9 +142,20 @@ ul {
 
 /* Page Hero */
 .page-hero {
-  background-color: #2f303a;
+  background-color: #c4c4c4;
   text-align: center;
   padding: 200px 0;
+}
+
+.overlay {
+max-height: 600px;
+max-width: 1600px;
+margin-left: auto;
+margin-right: auto;
+background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img-hero.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
 }
 
 .hero-title {
