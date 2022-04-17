@@ -26,6 +26,8 @@ h6 {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 ul {
   list-style: none;
@@ -121,6 +123,29 @@ ul {
 .header-contacts {
   display: flex;
 }
+
+.header-contacts .item::before {
+  content: "";
+  display: inline-flex;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  align-items: center;
+  /* outline: 1px solid black; */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-color: red; */
+}
+
+.icon-mail::before {
+  background-image: url("../images/envelope-hover.svg");
+}
+
+.icon-phone::before {
+  background-image: url("../images/phone-mob.svg");
+}
+
 
 .header-contacts .item + .item {
   margin-left: 50px;
@@ -228,12 +253,41 @@ padding-bottom: 0;
   margin-left: 30px;
 }
 
+.features-item::before {
+  content: "";
+  display: block;
+  height: 120px;
+  /* outline: 2px solid black; */
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #F5F4FA;
+  border-radius: 4px;
+}
+
+.icon-antena::before {
+  background-image: url("../images/antenna.svg");
+}
+
+.icon-clock::before {
+  background-image: url("../images/clock.svg");
+}
+
+.icon-diagram::before {
+  background-image: url("../images/diagram.svg");
+}
+
+.icon-cosmonavt::before {
+  background-image: url("../images/astronaut.svg");
+}
+
 .features-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-top: 30px;
   margin-bottom: 10.5px;
 }
 
