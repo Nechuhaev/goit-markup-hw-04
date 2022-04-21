@@ -386,17 +386,16 @@ ul, li, link, a {
   display: flex;
   height: 44px;
   width: 44px;
+  padding: 0;
   align-items: center;
   justify-content: center;
+  border-radius: 50%;
+
 }
 
 .team-soc-link:hover,
 .team-soc-link:focus {
-  height: 44px;
-  width: 44px;
   background-color: var(--accent-color);
-  border-radius: 50%;
-  fill: var(--primary-button-text-color);
 }
 
 .icon-instagram-team,
@@ -405,22 +404,8 @@ ul, li, link, a {
 .icon-linkedin-team {
   padding: 0;
   margin: 0;
-  width: 20px;
-  height: 20px;
   align-items: center;
   fill: #AFB1B8;
-}
-
-.icon-instagram-team:hover,
-.icon-twitter-team,
-.icon-facebook-team,
-.icon-linkedin-team {
-  padding: 0;
-  margin: 0;
-  width: 20px;
-  height: 20px;
-  align-items: center;
-  fill: var(--primary-button-text-color);
 }
 
 
@@ -550,6 +535,7 @@ ul, li, link, a {
 }
 
 .connection-title {
+  margin-top: 12px;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
